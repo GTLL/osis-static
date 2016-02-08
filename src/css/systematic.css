@@ -29,7 +29,6 @@ h1, h2, h3, h4 {
 
   h4 {
     font-size: 150%;
-    line-height: .9em;
   }
 }
 
@@ -173,30 +172,27 @@ ul.spaced-li > li + li {
   content: "";
   display: table-cell;
   width: 50%;
-  background: -webkit-linear-gradient(#FFF, #FFF) repeat-x left center;
-  background: -moz-linear-gradient(#FFF, #FFF) repeat-x left center;
-  background: -ms-linear-gradient(#FFF, #FFF) repeat-x left center;
   background: linear-gradient(#FFF, #FFF) repeat-x left center;
   background-size: 1px 1px;
 }
 
 /* header */
 
-#header {
+.header {
   background: none;
   margin: 10px;
   padding-bottom: 2.5em;
 }
 
-#header h1, #header h2 {
+.header h1, .header h2 {
   text-transform: uppercase;
 }
 
-#header h3 {
+.header h3 {
   margin: 20px 0;
 }
 
-#header .toright {
+.header .toright {
   margin-left: 10px;
 }
 
@@ -205,13 +201,13 @@ ul.spaced-li > li + li {
     background: url("../images/small_network.png") no-repeat 100% -170px rgba(0, 0, 0, 0);
   }
 
-  #header {
+  .header {
     background: url("../images/carres.png") no-repeat top left rgba(0, 0, 0, 0);
     padding-left: 245px;
     overflow: hidden;
   }
 
-  #header .toright {
+  .header .toright {
     margin-left: 70px;
   }
 }
@@ -221,13 +217,13 @@ ul.spaced-li > li + li {
     background: url("../images/small_network.png") no-repeat 100% -170px rgba(0, 0, 0, 0);
   }
 
-  #header {
+  .header {
     background: url("../images/carres.png") no-repeat top left rgba(0, 0, 0, 0);
     padding-left: 0px;
     overflow: hidden;
   }
 
-  #header #info {
+  .header .info {
     width: 1170px;
     margin: 0 auto;
   }
@@ -276,14 +272,14 @@ ul.credits img {
   position: relative;
 }
 
-#intro {
+.intro {
   font-family: "Oswald", sans-serif;
   /* font-style: italic; */
   font-size: 20px;
 
 }
 
-#intro div {
+.intro div {
   padding: 0.5em 0;
 }
 
@@ -305,7 +301,7 @@ a.btn-sign-in:hover {
 
 /* program */
 
-#program {
+.program {
   padding: 2.0em 0 2.5em;
   background: #f6f6f6;
 }
@@ -314,18 +310,18 @@ a.btn-sign-in:hover {
   font-family: "Oswald", sans-serif;
   font-size: 140%;
   color: rgb(83, 97, 115); /*darkgrey*/
-  font-width: bold;
-}
-
-#program .title {
-  padding: 1.5em 0;
-}
-
-#program h4 {
   font-weight: bold;
 }
 
-#program .content span {
+.program .title {
+  padding: 1.5em 0;
+}
+
+.program h4 {
+  font-weight: bold;
+}
+
+.program .content span {
   color: #636363;
   font-style: normal;
   font-weight: bold;
@@ -360,10 +356,7 @@ a.btn-sign-in:hover {
   border: 1px solid #E7E7E7;
   padding: 0.7em 0.4em;
   float: left;
-  margin-left: -11px;
-  margin-right: 10px;
-  margin-top: -1px;
-  margin-bottom: 10px;
+  margin: -1px 10px 10px -11px;
   height: 3.2em;
 }
 
@@ -378,7 +371,6 @@ a.btn-sign-in:hover {
 .actors .main {
   color: #EB43A7;
   font-weight: bold;
-
 }
 
 .text div.content {
@@ -388,11 +380,11 @@ a.btn-sign-in:hover {
 
 /* participants */
 
-#participants {
+.participants {
   padding: 2em;
 }
 
-#participants > .container {
+.participants > .container {
   padding: 0;
 }
 
@@ -424,27 +416,27 @@ ul.credits.list-inline > li {
 
 /* footer */
 
-#footer {
+.footer {
   padding: 2em;
   background: rgb(199, 207, 226);
   color: #333;
 }
 
-#footer > .container,
-#participants > .container {
+.footer > .container,
+.participants > .container {
   padding: 0;
 }
 
-#participants .organizers,
-#footer .organizers {
+.participants .organizers,
+.footer .organizers {
   color: rgb(83, 97, 115);
   font-size: 120%;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-#footer a,
-#footer a:hover,
-#footer a:visited {
+.footer a,
+.footer a:hover,
+.footer a:visited {
   color: #333;
 }
