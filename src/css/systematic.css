@@ -219,7 +219,7 @@ ul.spaced-li > li + li {
 
   .header {
     background: url("../images/carres.png") no-repeat top left rgba(0, 0, 0, 0);
-    padding-left: 0px;
+    padding-left: 0;
     overflow: hidden;
   }
 
@@ -231,8 +231,8 @@ ul.spaced-li > li + li {
 
 @media (max-width: 780px) {
   .darkgrey-strip.pa1-5e > .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .container {
@@ -274,9 +274,7 @@ ul.credits img {
 
 .intro {
   font-family: "Oswald", sans-serif;
-  /* font-style: italic; */
   font-size: 20px;
-
 }
 
 .intro div {
@@ -354,7 +352,7 @@ a.btn-sign-in:hover {
 .conf .date .icon {
   font-family: "Oswald", sans-serif;
   border: 1px solid #E7E7E7;
-  padding: 0.7em 0.4em;
+  padding: 0.7em 0.3em;
   float: left;
   margin: -1px 10px 10px -11px;
   height: 3.2em;
@@ -382,6 +380,7 @@ a.btn-sign-in:hover {
 
 .participants {
   padding: 2em;
+  background-color: white;
 }
 
 .participants > .container {
